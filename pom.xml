@@ -22,6 +22,17 @@
    	 	<sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
   	 	<sonar.language>java</sonar.language>
 	</properties>
+	<build>
+    		<pluginManagement>
+       			 <plugins>
+            		<plugin>
+               			 <groupId>org.sonarsource.scanner.maven</groupId>
+                		<artifactId>sonar-maven-plugin</artifactId>
+                		<version>3.4.0.905</version>
+            		</plugin>
+      	  		</plugins>
+    		</pluginManagement>
+	</build>
 
 	<modules>
 		<module>discovery-service</module>
